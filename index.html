@@ -1,229 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d7d5dd47d5.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Abhinav's Portfolio | Senior Front-end Engineer</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!-- 
+Easy Profile Template
+http://www.templatemo.com/tm-467-easy-profile
+-->
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/templatemo-blue.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZPF8Q2CD9"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-6ZPF8Q2CD9');
+	</script>
 </head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">contact</a></li>
-                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
-               </ul>
-               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, i'm <span>Abhijeet</span><br>from Bihar,India</h1>
-            </div>
-        </div>
-    </div>
-<!---  ----------about-------  ---->
-    <div id="about">
-        <div class="container">
-            <div class="row"> 
-                <div class="about-col-1">
-                    <img src="images/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I am a MCA student pursuing my Master's degree in Computer Applications from Graphic Era Hill University, Dehradun. 
-                    I have a strong technical background and have worked on various projects related to web development and database management. 
-                    I have a keen interest in software development, programming and designing applications.
-                    I have worked as an intern in a few software companies and have gained a lot of experience in working on different software projects. 
-                    I am proficient in a number of coding languages such as Java, C++ and HTML. I am also well versed in database technologies like Oracle and MySQL.                        
-                    I am a self-motivated and hardworking individual who is always ready to learn new technologies. I am an active user of LinkedIn and have a strong online presence. 
-                    I am also an active member of various online communities and participate in online discussion forums.
-                    </p>
+<body data-spy="scroll" data-target=".navbar-collapse">
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2022 - current</span><br>UI/UX Design</li>
-                            <li><span>2019 - 2021</span><br>Team Lead at StarApp LLc.</li>
-                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at coin 
-                            Digital Ltd.</li>
-                            <li><span>2016 - 2017</span><br>Intership at ekart eCommerce.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022 - Current</span><br>MCA from Graphic Era Hill University</li>
-                            <li><span>2018 - 2021</span><br>BCA from Arcade Business College</li>
-                            <li><span>2018</span><br>12<sup>th</sup> from Bihar Secondary Examination Board</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------------services-------- -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2> 
-                    <p>Web design is the process of creating an aesthetically pleasing and functionally effective website. 
-                    It involves the use of various techniques, such as graphic design, coding, and user experience design, 
-                    to create an effective website that meets the needs of its users.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>UX/UI designers work to create a positive experience for users by making sure that the product or service is easy to use, 
-                    visually appealing, and provides an enjoyable experience for users.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>The design of an app should be tailored to the purpose of the app and the target audience. 
-                    The design should be intuitive and include visuals, icons, and text that are easy to read and understand.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- -------------portfolio------------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world.
-                        Download it from playstore</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app connects you to the talented people around the world.
-                        Download it from playstore</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>The app connects you to the talented people around the world.
-                        Download it from playstore</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </div>
-    <!-- ----------Contact----------- -->
-   <div id="contact">
-      <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>abhikmr1899@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>7488898298</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/i.am.abhee/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://github.com/abhee74" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.linkedin.com/feed/?trk=homepage-basic_signin-form_submit" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                 </div>
-                 <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
-            </div>
-              <div class="contact-right">
-                  <form name="submit-to-google-sheet">
-                     <input type="text" name="Name" placeholder="Enter Your Name" required>
-                     <input type="email" name="Email" placeholder="Enter Your E-mail" required>
-                     <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
-                     <button type="submit" class="btn btn2">Submit</button>
-                  </form>
-                  <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>copyright <i class="fa-solid fa-copyright"></i> kevin.Made with <i class="fa-solid fa-heart"></i> by Abhijeet</p>
-
-    </div>
+<!-- preloader section -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-wordpress">
+       <span class="sk-inner-circle"></span>
+     </div>
 </div>
 
-    <script>
+<!-- header section -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+                <h1 class="tm-title bold shadow  line-1  anim-typewriter">Hi, I am Abhinav</h1>
+				<img src="images/self.svg" class="img-responsive img-circle" alt="templatemo easy profile">
+				<hr>
+				
+                <h1 class="bold shadow tm-title">Senior Front-end Engineer</h1>
+                <h4 class="sub-title">I build web apps and code beautifully simple things.</h4>
+			</div>
+		</div>
+	</div>
+</header>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+<!-- about and skills section -->
+<section class="container mt-15">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<div class="about">
+				<h3 class="accent">About me</h3>
+				<!-- <h2>Bootstrap v3.3.5</h2> -->
+				<p class="hobby-desc">
+                    Passionate software engineer with 8 years of experience building products in fast-paced, collaborative, and agile environments. Highly skilled in web technologies. Collaborative working experience with international cross-functional teams from the USA and Europe.
+                </p>
+                <p class="hobby-desc">
+                    I like solving business problems, building a stable and accessible product to make difference in our partner's business operations, and bringing the rich user experience to consumer through web.
+                </p>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<div class="skills">
+				<h2 class="white">Skills</h2>
+				<strong>HTML, CSS, Javascript, NodeJS</strong>
+				<!-- <span class="pull-right">100%</span> -->
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+					</div>
+				<strong>Angular, VueJS, React, Data Visualization</strong>
+				<!-- <span class="pull-right">90%</span> -->
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+					</div>
+				<strong>Highly organized, Innovative problem-solving</strong>
+				<!-- <span class="pull-right">95%</span> -->
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-    </script> 
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
+<!-- education and languages -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-8 col-sm-12">
+			<div class="experience">
+                <h2 class="white">Experience <span class="fa fa-briefcase"></span></h2>
+				<div class="experience-content">
+                    <h4 class="experience-title accent no-margin">Senior Software Engineer</h4>
+                    <h5 class="company no-margin">Zalando SE, Berlin Germany</h5>
+                    <h6>2022 Apr - Present</h6>
+                    <!-- <p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
+                </div>
+                <div class="experience-content">
+                    <h4 class="experience-title accent no-margin">Senior Front-end Engineer</h4>
+                    <h5 class="company no-margin">Zeta, Pune India</h5>
+                    <h6>2020 Nov - 2022 Mar</h6>
+                    <!-- <p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
+                </div>
+                <div class="experience-content">
+                    <h4 class="experience-title accent no-margin">Senior Front-end Engineer</h4>
+                    <h5 class="company">United Parcel Services(UPS), Gurugram India</h5>
+                    <h6 class="no-margin">2019 Aug - 2020 Nov</h6>
+                    <!-- <p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
+                </div>
+                <div class="experience-content">
+                    <h4 class="experience-title accent no-margin">Front-end Engineer</h4>
+                    <h5 class="company">Carnival Cruise Lines, Montevideo Uruguay</h5>
+                    <h6 class="no-margin"> 2017 March - 2019 Aug</h6>
+                    <!-- <p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
+                </div>
+                <div class="experience-content">
+                    <h4 class="experience-title accent no-margin">Web Developer</h4>
+                    <h5 class="company">TCS Ignite Lab, Chennai India</h5>
+                    <h6 class="no-margin">2014 July - 2017 Feb</h6>
+                    <!-- <p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
+                </div>
+			</div>
+        </div>
+		<div class="col-md-4 col-sm-12">
+			<div class="languages">
+				<h2>What else I <span class="fa fa-heart love" aria-hidden="true"></span></h2>
+					<!-- <ul>
+						<li>Writing / Reading </li>
+						<li>English / Spanish</li>
+						<li>Chinese / Japanese</li>
+						<li>Arabic / Hebrew</li>
+                    </ul> -->
+                    <p class="hobby-desc">In my spare time, you will find me reading books, writing articles, contributing to community and occasionally cooking especially with friends and family. </p>
+                    <br>
+                    <p class="hobby-desc">I am a social person, I like listening to stories and real life experiences. Travelling and exploring lands are always my favorite break from work.</p>
+                    <br>
+                    <br>
+                    
+                    <div class="hobby">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 each" title="I love reading books, it gives me knowledge and power to conquer">
+                            <span class="fa fa-book"></span>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzXgySf6dzKFIG9AVAQ8tvSUiZ2dhDOjx_e0jyJhYr1ogJmnPjrrp0UFKrcJhjr0hqG/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script> 
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 each" title="I write blogs and like sharing my knowledge.">
+                                <span class="fa fa-pencil"></span>
 
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 each" title="I love exploring places and meeting new people on the journey.">
+                                <span class="fa fa-plane"></span>
+
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 each" title="I like cooking and trying new cuisines. ">
+                                <span class="fa fa-cutlery"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 each" title="I like driving motorbikes.">
+                            <span class="fa fa-motorcycle"></span>
+
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 each" title="I am a social person, I like meeting new people and exploring different cultures.">
+                                <span class="fa fa-users"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- contact and experience -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<div class="contact">
+				<h2>Contact</h2>
+					<p><i class="fa fa-map-marker"></i> Berlin, Germany</p>
+					<p><i class="fa fa-envelope"></i> abhinavkumar985@gmail.com</p>
+					<!-- <p><i class="fa fa-skype"></i> abhinavkumar985@gmail.com</p> -->
+					<!-- <p><i class="fa fa-globe"></i> www.company.com</p> -->
+			</div>
+		</div>
+        <div class="col-md-8 col-sm-12">
+			<div class="education">
+				<h2 class="white">Education <span class="fa fa-graduation-cap"></span></h2>
+				<div class="education-content">
+					<h4 class="education-title accent">Master of Computer Application</h4>
+						<div class="education-school">
+							<h5>Indira Gandhi National Open University</h5><span></span>
+							<h5>2015 July - 2020 July</h5>
+						</div>
+					<p class="education-description">Learned more about High Level Programming Languages and Computer Application architecture. I have completed this course along with my career.</p>
+				</div>
+					<div class="education-content">
+						<h4 class="education-title accent">Bachelor of Computer Application</h4>
+							<div class="education-school">
+								<h5>Usha Martin Academy, Patna, India</h5><span></span>
+								<h5>2011 April - 2014 May</h5>
+							</div>
+						<p class="education-description">My first introduction to computer was in college. I found myself interested in high-level programming languages like Java. The most exciting moment of my college life was implementing the OTP authentication via Gmail in my final semester project.</p>
+                    </div>
+                    
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer section -->
+<footer class="footer mt-15">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+                <p class="more">Living, learning & leveling up<br> one day at a time.</p>
+                <br><br>
+				<ul class="social-icons">
+                    <li title="LindedIn | Learn more about my recent acheivements and learnings"><a href="https://www.linkedin.com/in/abhinavkumar985/" target="blank" class="fa fa-linkedin"></a></li>
+					<li title="Github"><a href="https://github.com/abhinavkumar985/" target="blank" class="fa fa-github"></a></li>
+					<li title="Stack Overflow | Check out my contribution to the community"><a href="https://stackoverflow.com/users/9406763/abhinav-kumar" target="blank" class="fa fa-stack-overflow"></a></li>
+                    <li title="Medium | Learn more about the knowledge, I am sharing"><a href="https://abhinavkumar985.medium.com/" target="blank" class="fa fa-medium"></a></li>
+					<!-- <li title="Facebook | Be social and kind"><a href="https://www.facebook.com/abhinav.kumar.5268750/" target="blank" class="fa fa-facebook"></a></li> -->
+					<li title="Twitter"><a href="https://twitter.com/abhinav985" target="blank" class="fa fa-twitter"></a></li>
+                    <li title="Personal Blog"><a href="https://abhinavthelearner.blogspot.com/" target="blank" class="fa fa-rss"></a></li>
+                </ul>
+                <br><br><br>
+                <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> Handcrafted by me </p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- javascript js -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>

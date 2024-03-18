@@ -1,2 +1,3 @@
-# personal-portfolio
-I developed this portfolio by using html, CSS, javascript
+# portfolio	
+## Welcome to GitHub Pages
+For my portfolio
